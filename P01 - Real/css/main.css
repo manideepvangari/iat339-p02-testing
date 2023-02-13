@@ -1,0 +1,226 @@
+/* Style Guide for Pucci Couture
+
+IAT 339 P01 - Style Guide
+Alexandro (Dro) Bertoia, 301281348
+February 1 2023
+*/
+
+/* --------------------------------Styling for Text Elements ------------------------------- */
+
+
+
+/* Custom Font Imports */
+@font-face {
+    font-family: champagne;
+    src: url(../fonts/champ.ttf);
+}
+
+@font-face {
+    font-family: champagne;
+    src: url(../fonts/ChampagneAndLimousinesBold.ttf);
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(../fonts/coolvetica\ rg.otf);
+    font-weight: bold;
+}
+
+/* -------------------------Individual Text Elements----------------------------------------- */
+
+body{
+    font-family: helvetica;
+    padding: 2rem;
+    background-color: #565b61;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-family: champagne;
+    font-size: 5rem;
+    color: #f7d126;
+}
+
+h2{
+    color:#ffb133;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+h3{
+    color:#ffb133;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+h4{
+    color:#ffb133;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+h5{
+    color:#ffb133;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.champFont{
+    font-family: champagne;
+    font-size: 2rem;
+    margin: 0%;
+}
+
+.helvFont{
+    font-family: helvetica;
+    font-size: 2rem;
+    margin: 0%;
+}
+
+.inTextLink{
+    color: #ffb133;
+    text-decoration: underline 0.5px solid #ffb133;
+}
+
+.inTextLink:hover, .inTextLink:focus{
+    color:#f7d126;
+    text-decoration: none;
+}
+
+.codeExample{
+    font-family: helvetica;
+    font-size: medium;
+    background-color: #565b6180 ;
+}
+
+/*-----------------------------Section Styling--------------------------------------------- */
+
+.sectionSeparate{
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: dashed;
+  border-top-color:#ffb133;
+}
+.midHeadColor{
+    color: #e0e0e0;
+}
+
+.header{
+    padding: 2rem;
+    background-color: #1e1e24;
+}
+
+.sideBySideElements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.horizontalElement{
+    margin-right: 40px;
+    width: 400px;
+}
+
+.horizontalMultiElement{
+    margin-right: 40px;
+    width: 400px;
+    flex-grow: 1;
+}
+
+.horizontalElementSmallMargin{
+    margin-right: 40px;
+    width: 450px;
+    height: 250px;
+    
+}
+/*-----------------------------Navigation Styling--------------------------------------------- */
+nav a{
+    font-size: 1.5rem;
+    font-family: champagne;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffb133;
+    padding-left: 4rem; 
+}
+
+nav a:hover, nav a:focus{
+    text-decoration: underline 2px solid #ffb133;    
+}
+/*------------------------------Color Swatch styling--------------------------------------- */
+.swatches{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swatch{
+    height: 200px;
+    width: 200px;
+    background-color: #ffb133;
+    line-height: 170px;
+    text-align: center;
+    font-size: large;
+}
+.swatch2{
+    background-color: #f7d126;
+}
+.swatch3{
+    background-color: #e0e0e0;
+    color: #1e1e24;
+}
+.swatch4{
+    background-color: #495b6e;
+}
+.swatch5{
+    background-color: #1e1e24;
+    color:#e0e0e0
+}
+
+/*----------------------------------Button Styling-------------------------- */
+.button{
+    background-color: #495b6e;
+    color: #e0e0e0;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    border: 2px solid #ffb133;
+    transition-duration: 0.8s;
+    margin-top: 5rem;
+    border-radius: 8px;
+  }
+  
+  .button:hover{
+    background-color: #ffb133;
+    color:#495b6e
+  }
+
+  /*----------------------------- Input Styling --------------------------------------*/
+  .textInput{
+    display: block;
+    color:#1e1e24;
+    font-weight: bold;
+    font-size:larger;
+    border: 5px solid #ffb133;
+    border-radius: 8px;
+    padding: 20px;
+    background:#e0e0e0;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.textInputLabel{
+    font-size: larger;
+    color: #ffb133;
+}
+
+.radioStyle{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.radioLabel{
+    padding-bottom: 5rem;
+}
+
+/*----------------------------------Image Styling-------------------------------*/
+
+.imageLink:hover, .imageLink:active{
+    filter: brightness(50%);
+    transition: 0.8s;
+}
