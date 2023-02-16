@@ -366,3 +366,55 @@ a{
     max-width: 50%;
   }
   
+
+/*------------------------------Color Swatch styling--------------------------------------- */
+.swatches{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swatch{
+  height: 200px;
+  width: 200px;
+  background-color: #2b4162;
+  line-height: 170px;
+  text-align: center;
+  font-size: large;
+}
+.swatch2{
+  background-color: #385f71;
+}
+.swatch3{
+  background-color: #f5f0f6;
+  color: #1e1e24;
+  border: 1px solid #1e1e24;
+}
+.swatch4{
+  background-color: #dcdcdd;
+}
+.swatch5{
+  background-color: #c5c3c6;
+}
+
+.swatch6{
+  background-color: #46494c;
+  color: #c5c3c5;
+}
+
+.swatch7{
+  background-color: #969a97;
+}
+
+.swatch8{
+  background-color: #d6d1cd;
+}
+
+.swatch9{
+  background-color: #e5ece9;
+}
+
+.sideBySideElements{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
