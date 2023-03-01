@@ -1,0 +1,104 @@
+/* Typeface */
+h1,h2,h3{
+    font-family: monospace;
+  }
+  
+h2{
+    color: rgb(35, 75, 135);
+    font-size: 25px;
+  }
+
+/* Margins for text */
+.margins{
+    margin-left: 110px;
+  }
+
+
+/* Navigation bar elements */
+.nav{
+    margin-left: 20px;
+    display: inline-block;
+	color: black; 
+	font-size: 1.25rem;
+
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+
+    transition: background-color 0.5s ease-out;
+    font-family: monospace;
+}
+
+.nav:active, .nav:hover, .nav:focus {
+    color: rgb(35, 75, 135);
+    text-decoration: none;
+    /* text-decoration-color: rgb(35, 75, 135); */
+  }
+  
+  .nav:hover::after{
+    content: '.';
+  }
+
+  /* Landing image  */
+
+  #gym{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: none;
+    border-bottom: none;
+    border-left: 120px solid #555;
+    border-right: 120px solid #555;
+  }
+
+  /* Placeholder squares for the 3 shop images */
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+  }
+  
+  .square {
+    height: 200px;
+    width: 300px;
+    background-color: #bccce6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .square span {
+    color: black;
+    font-weight: bold;
+  }
+
+  .square:hover{
+    background-color: #8ba1c4;
+
+  }
+
+  /* Maybe add a label underneath each image? */
+
+  /* .labels {
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+    margin-right: 400px;
+    
+  }
+  
+  .label {
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 350px;
+    
+  } */
+ 
+ 
+
+  
+
+
