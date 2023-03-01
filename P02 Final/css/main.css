@@ -41,14 +41,15 @@ h2{
   /* Landing image  */
 
   #gym{
-    display: block;
     margin-left: auto;
     margin-right: auto;
     border-top: none;
     border-bottom: none;
     border-left: 120px solid #555;
     border-right: 120px solid #555;
+    z-index: 0;
   }
+
 
   /* Placeholder squares for the 3 shop images */
   .container {
@@ -104,7 +105,29 @@ h2{
     
   } */
  
- 
+ /* ----------------------Flexbox code for items----------------------*/
+ .sideBySideElements{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.horizontalElement{
+  margin-right: 40px;
+  width: 400px;
+}
+
+.horizontalMultiElement{
+  margin-right: 40px;
+  margin-bottom: 50px;
+  width: 400px;
+  flex-grow: 1;
+}
+
+.flexHeader{
+  justify-content: left;
+
+}
 
   
 
