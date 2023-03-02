@@ -8,6 +8,11 @@ h2{
     font-size: 25px;
   }
 
+p{
+  font-family: monospace;
+  font-size: large;
+}
+
 /* Margins for text */
 .margins{
     margin-left: 110px;
@@ -119,8 +124,8 @@ h2{
 }
 
 .imageMulti{
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .imageCaptionCategory{
@@ -154,7 +159,7 @@ h2{
   .label {
     color: black;
     font-weight: normal;
-    text-align: center;
+    text-9align: center;
     margin-left: 350px;
     
   } */
@@ -189,7 +194,7 @@ h2{
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
