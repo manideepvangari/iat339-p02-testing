@@ -148,8 +148,9 @@ p{
 }
 
 .prodDetailImage{
-  width: 550px;
-  height: 550px;
+  width: 400px;
+  height: 400px;
+  
 }
 
 .check{
@@ -229,7 +230,7 @@ p{
   flex-direction: column;
   justify-content: left;
   flex-wrap: wrap;
-  margin: 15rem;
+  margin: 10rem;
   align-items: flex-start;
 }
 
