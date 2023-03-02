@@ -1,207 +1,405 @@
 /* Typeface */
 h1,h2,h3{
-    font-family: monospace;
-  }
-  
+  font-family: monospace;
+}
+
 h2{
-    color: rgb(35, 75, 135);
-    font-size: 25px;
-  }
+  color: rgb(35, 75, 135);
+  font-size: 25px;
+}
 
 p{
-  font-family: monospace;
-  font-size: large;
+font-family: monospace;
+font-size: large;
 }
 
 /* Margins for text */
 .margins{
-    margin-left: 110px;
-  }
+  margin-left: 110px;
+}
 
 
 /* Navigation bar elements */
 .nav{
-  margin-left: 20px;
-  display: inline-block;
-	color: black; 
-	font-size: 1.25rem;
+margin-left: 20px;
+display: inline-block;
+color: black; 
+font-size: 1.25rem;
 
-  padding: 0.25rem 0.5rem;
-  text-decoration: none;
+padding: 0.25rem 0.5rem;
+text-decoration: none;
 
-  transition: background-color 0.5s ease-out;
-  font-family: monospace;
+transition: background-color 0.5s ease-out;
+font-family: monospace;
 }
 
 .nav:active, .nav:hover, .nav:focus {
-    color: rgb(35, 75, 135);
-    text-decoration: none;
-    /* text-decoration-color: rgb(35, 75, 135); */
-  }
-  
-  .nav:hover::after{
-    content: '.';
-  }
+  color: rgb(35, 75, 135);
+  text-decoration: none;
+  /* text-decoration-color: rgb(35, 75, 135); */
+}
+
+.nav:hover::after{
+  content: '.';
+}
 
 /*------------------ Footer Styling ------------- */
 .footer{
-  display: flex;
-  box-sizing: border-box;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-direction: column;
-  background-color: #555;
-  color: #bccce6;
-  text-align: center;
-  height:auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+display: flex;
+box-sizing: border-box;
+flex-grow: 0;
+flex-shrink: 0;
+flex-direction: column;
+background-color: #555;
+color: #bccce6;
+text-align: center;
+height:auto;
+padding-top: 2rem;
+padding-bottom: 2rem;
 }
 
 
-  /* Landing image  */
+/* Landing image  */
 
-  #gym{
-    margin-left: auto;
-    margin-right: auto;
-    border-top: none;
-    border-bottom: none;
-    border-left: 120px solid #555;
-    border-right: 120px solid #555;
-    z-index: 0;
-  }
+#gym{
+  margin-left: auto;
+  margin-right: auto;
+  border-top: none;
+  border-bottom: none;
+  border-left: 120px solid #555;
+  border-right: 120px solid #555;
+  z-index: 0;
+}
 
 
-  /* Placeholder squares for the 3 shop images */
-  .container {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 150px;
-  }
-  
-  .square {
-    height: 200px;
-    width: 300px;
-    background-color: #bccce6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 50px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .square span {
-    color: black;
-    font-weight: bold;
-  }
+/* Placeholder squares for the 3 shop images */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 150px;
+}
 
-  .square:hover{
-    background-color: #8ba1c4;
+.square {
+  height: 200px;
+  width: 300px;
+  background-color: #bccce6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  }
+.square span {
+  color: black;
+  font-weight: bold;
+}
 
-  .label_container{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+.square:hover{
+  background-color: #8ba1c4;
 
-  }
+}
+
+.label_container{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+}
 
 /*--------------------------------Image Styling------------------------------*/
-  .imageLink:hover, .imageLink:active{
-    filter: brightness(50%);
-    transition: 0.8s;
+.imageLink:hover, .imageLink:active{
+  filter: brightness(50%);
+  transition: 0.8s;
 }
 
 .imageShadow{
-  filter: drop-shadow(30px 10px 4px black );
+filter: drop-shadow(30px 10px 4px black );
 }
 
 .imageCategory{
-  width: 300px;
-  height: 300px;
+width: 300px;
+height: 300px;
 }
 
 .imageMulti{
-  width: 250px;
-  height: 250px;
+width: 250px;
+height: 250px;
 }
 
 .imageCaptionCategory{
-  font-family: monospace;
-  text-align: center;
-  width: 300px;
-  font-size:xx-large;
+font-family: monospace;
+text-align: center;
+width: 300px;
+font-size:xx-large;
 }
 
 .imageCaptionMulti{
-  font-family: monospace;
-  text-align: center;
-  width: 250px;
-  font-size:medium;
+font-family: monospace;
+text-align: center;
+width: 250px;
+font-size:medium;
 }
 
 .eventPic{
-  width: 450px;
-  height: 450px;
+width: 450px;
+height: 450px;
 }
 
 .prodDetailImage{
-  width: 400px;
-  height: 400px;
-  
+width: 400px;
+height: 400px;
+
 }
 
 .check{
-  height: 50px;
-  width: 50px;
+height: 50px;
+width: 50px;
 }
-  
- /* ----------------------Flexbox code for items----------------------*/
- .sideBySideElements{
+/* Maybe add a label underneath each image? */
+
+/* .labels {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
+  justify-content:center;
+  margin-top: 10px;
+  margin-right: 400px;
+  
+}
+
+.label {
+  color: black;
+  font-weight: normal;
+  text-9align: center;
+  margin-left: 350px;
+  
+} */
+
+/* ----------------------Flexbox code for items----------------------*/
+.sideBySideElements{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row;
 }
 
 .horizontalElement{
-  margin-right: 40px;
-  width: 300px;
+margin-right: 40px;
+width: 300px;
 }
 
 .horizontalMultiElement{
-  margin-bottom: 50px;
-  width: 400px;
-  flex-grow: 1;
+margin-bottom: 50px;
+width: 400px;
+flex-grow: 1;
 }
 
 .flexHeader{
-  justify-content: left;
+justify-content: left;
 }
 
 .multiItem{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  width: 85%;
-  margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+width: 85%;
+margin: auto;
 }
 
 .summaryPic{
-  width: 300px;
-  height: 300px;
-  margin-left: 10rem;
+width: 300px;
+height: 300px;
+margin-left: 10rem;
 }
 
 
 /* --------------------- Item Page Styling ------------------ */
+.itemDetailsContainer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.itemTextDetails{
+display: flex;
+flex-direction: column;
+justify-content: left;
+flex-wrap: wrap;
+margin: 10rem;
+align-items: flex-start;
+}
+
+.reviews{
+display: flex;
+box-sizing: border-box;
+flex-grow: 0;
+flex-shrink: 0;
+flex-direction: column;
+text-align: center;
+height:auto;
+padding-bottom: 2rem;
+}
+
+.summary{
+background-color: #8ba1c4;
+width: 70%;
+display: flex;
+flex-direction:row;
+align-items: center;
+margin: auto;
+}
+
+/* add to cart button */
+.button_cart{
+width: 90%;
+background: transparent;
+border: none;
+background: rgb(35, 75, 135);
+color: #fff;
+padding: 15px;
+border-radius: 4px;
+font-size: 16px;
+transition: all 0.35s ease;
+font-family: Cambria;
+}
+
+button:hover{
+cursor: pointer;
+background: rgb(20, 45, 83);
+}
 
 
+/* ---------------- Cart Styling ------------------- */
 
+.cart-container{
+  width: 70%;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
 
+.header{
+  margin: auto;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.heading{
+  font-size: 20px;
+  font-family: Cambria;
+  font-weight: 700;
+  color: rgb(35, 75, 135);
+}
+
+.cart-items{
+  margin: auto;
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about{
+  height: 100%;
+  width: 24%;
+}
+
+.title{
+  padding-top: 10px;
+  line-height: 10px;
+  font-size: 32px;
+  font-family: Cambria;
+  font-weight: 800;
+  color: rgb(35, 75, 135);
+}
+
+.counter{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: 900;
+  color: #202020;
+  cursor: pointer;
+  font-family: Cambria;
+  margin-top: -95px;
+}
+.count{
+  font-size: 20px;
+  font-family: Cambria;
+  font-weight: 600;
+  color: #202020;
+  margin-top: -95px;
+}
+
+.prices{
+  height: 100%;
+  text-align: right;
+}
+.amount{
+  padding-top: 0px;
+  font-size: 26px;
+  font-family: Cambria;
+  font-weight: 800;
+  color: rgb(35, 75, 135);
+  margin-top: 27px;
+}
+
+hr{
+  width: 66%;
+  float: right;
+  margin-right: 5%;
+}
+
+.checkout{
+  float: right;
+  margin-right: 5%;
+  width: 28%;
+}
+
+.total-amount{
+  font-size: 36px;
+  font-family: Cambria;
+  font-weight: 900;
+  margin-left: 215px;
+  color: rgb(35, 75, 135);
+  margin-bottom: 20px;
+}
+
+button_cart{
+  width: 100%;
+  background: transparent;
+  border: none;
+  background: rgb(35, 75, 135);
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.35s ease;
+  font-family: Cambria;
+}
+
+.cart_margins{
+  margin-top: 50px;
+}
