@@ -38,6 +38,22 @@ h2{
     content: '.';
   }
 
+/*------------------ Footer Styling ------------- */
+.footer{
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: #555;
+  color: #bccce6;
+  text-align: center;
+  height:auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
   /* Landing image  */
 
   #gym{
@@ -87,7 +103,7 @@ h2{
 
   }
 
-
+/*--------------------------------Image Styling------------------------------*/
   .imageLink:hover, .imageLink:active{
     filter: brightness(50%);
     transition: 0.8s;
@@ -103,8 +119,8 @@ h2{
 }
 
 .imageMulti{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .imageCaptionCategory{
@@ -117,7 +133,7 @@ h2{
 .imageCaptionMulti{
   font-family: monospace;
   text-align: center;
-  width: 100px;
+  width: 200px;
   font-size:medium;
 }
 
@@ -170,7 +186,7 @@ h2{
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
