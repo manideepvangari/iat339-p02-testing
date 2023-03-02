@@ -124,8 +124,8 @@ p{
 }
 
 .imageMulti{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .imageCaptionCategory{
@@ -138,7 +138,7 @@ p{
 .imageCaptionMulti{
   font-family: monospace;
   text-align: center;
-  width: 200px;
+  width: 250px;
   font-size:medium;
 }
 
@@ -194,7 +194,7 @@ p{
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
