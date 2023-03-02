@@ -114,19 +114,19 @@ h2{
 }
 
 .imageCategory{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .imageMulti{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .imageCaptionCategory{
   font-family: monospace;
   text-align: center;
-  width: 400px;
+  width: 300px;
   font-size:xx-large;
 }
 
@@ -137,6 +137,10 @@ h2{
   font-size:medium;
 }
 
+.eventPic{
+  width: 450px;
+  height: 450px;
+}
   /* Maybe add a label underneath each image? */
 
   /* .labels {
@@ -169,7 +173,6 @@ h2{
 }
 
 .horizontalMultiElement{
-  margin-right: 40px;
   margin-bottom: 50px;
   width: 400px;
   flex-grow: 1;
