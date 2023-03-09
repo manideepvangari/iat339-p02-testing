@@ -444,7 +444,119 @@ button_cart{
   margin-top: 50px;
 }
 
-/* Payment Details  */
+/* for screens with a width of 768px or less */
+/* Mobile layout */
+@media (max-width: 768px) {
+  .cart-container{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .header{
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading{
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .cart-items{
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .hoodie{
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .about{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .title{
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .counter{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .btn{
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .count{
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .prices{
+    height: auto;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .amount{
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  hr{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .checkout{
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .total-amount{
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .button_cart{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .cart_margins{
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+/*  ---------------- Payment Details  ---------------- */
 
 * {
   box-sizing: border-box;
