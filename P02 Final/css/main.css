@@ -62,13 +62,11 @@ padding-bottom: 2rem;
 /* Landing image  */
 
 #gym{
-  margin-left: auto;
-  margin-right: auto;
-  border-top: none;
-  border-bottom: none;
   border-left: 120px solid #555;
   border-right: 120px solid #555;
   z-index: 0;
+  max-width:100%;
+  height: auto;
 }
 
 
@@ -196,6 +194,29 @@ flex-grow: 1;
 
 .flexHeader{
 justify-content: left;
+margin-left: 20%;
+}
+
+.flexInheritText{
+  text-align: center;
+}
+
+@media (max-width: 1400px){
+  .flexHeader{
+    text-align: center;
+    margin-left: 0%;
+  }
+} 
+
+.aboutSection{
+  display: flex;
+  box-sizing: border-box;
+  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  padding-top: 1rem;
+
 }
 
 .multiItem{
@@ -212,9 +233,24 @@ margin: auto;
 .summaryPic{
 width: 300px;
 height: 300px;
-margin-left: 10rem;
 }
 
+
+/* --------------------- Order Confirm Page Styling ------------------ */
+
+.confirmItem{
+  margin: 2rem;
+}
+
+.confirmBG{
+  background-color: #8ba1c4;
+  width: 70%;
+  height: 70%;
+}
+
+.confirmText{
+  font-size: 30px;
+}
 
 /* --------------------- Item Page Styling ------------------ */
 .itemDetailsContainer{
@@ -233,6 +269,7 @@ flex-wrap: wrap;
 margin: 10rem;
 align-items: flex-start;
 }
+ 
 
 .reviews{
 display: flex;
@@ -245,12 +282,15 @@ height:auto;
 padding-bottom: 2rem;
 }
 
+
+
 .summary{
 background-color: #8ba1c4;
 width: 70%;
 display: flex;
 flex-direction:row;
 align-items: center;
+justify-content: center;
 margin: auto;
 }
 
@@ -309,15 +349,6 @@ background: rgb(20, 45, 83);
   align-items: center;
 }
 
-.hoodie{
-  margin-left: 10px;
-  scale: 1.1;
-  width: calc(100% - 50.1vw);
-  min-width: 8vw;
-  height: 120px;
-  object-fit: contain;
-}
-
 .about{
   height: 100%;
   width: 24%;
@@ -326,7 +357,7 @@ background: rgb(20, 45, 83);
 .title{
   padding-top: 10px;
   line-height: 10px;
-  font-size: 2.5vw;
+  font-size: 32px;
   font-family: Cambria;
   font-weight: 800;
   color: rgb(35, 75, 135);
@@ -337,32 +368,29 @@ background: rgb(20, 45, 83);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 5vw; */
 }
-
 .btn{
-  width: 2.75vw;
-  height: 2.75vw;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #d9d9d9;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4vw;
+  font-size: 20px;
   font-family: 'Open Sans';
   font-weight: 900;
   color: #202020;
   cursor: pointer;
   font-family: Cambria;
-  margin-top: -25px;
+  margin-top: -95px;
 }
-
 .count{
-  font-size: 1.7vw;
+  font-size: 20px;
   font-family: Cambria;
   font-weight: 600;
   color: #202020;
-  margin-top: -25px;
+  margin-top: -95px;
 }
 
 .prices{
@@ -371,7 +399,7 @@ background: rgb(20, 45, 83);
 }
 .amount{
   padding-top: 0px;
-  font-size: 2vw;
+  font-size: 26px;
   font-family: Cambria;
   font-weight: 800;
   color: rgb(35, 75, 135);
@@ -391,15 +419,15 @@ hr{
 }
 
 .total-amount{
-  font-size: 2.3vw;
+  font-size: 36px;
   font-family: Cambria;
   font-weight: 900;
+  margin-left: 215px;
   color: rgb(35, 75, 135);
-  margin-bottom: 1.5vw;
-  margin-left: calc(100% - 7.1vw);
+  margin-bottom: 20px;
 }
 
-.button_cart{
+button_cart{
   width: 100%;
   background: transparent;
   border: none;
@@ -416,78 +444,7 @@ hr{
   margin-top: 50px;
 }
 
-/* for screens with a width of 768px or less */
-@media (max-width: 768px) {
-  .cart-container {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .header {
-    width: 90%;
-    height: 20%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .cart-items {
-    width: 90%;
-    height: 50%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-
-  .counter {
-    width: 40%;
-    margin-top: 20px;
-  }
-
-  .btn {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-    margin-top: 0;
-  }
-
-  .count {
-    font-size: 16px;
-    margin-top: 0;
-  }
-
-  .prices {
-    text-align: left;
-    margin-top: 20px;
-  }
-
-  hr {
-    width: 90%;
-    margin-right: 0;
-  }
-
-  .checkout {
-    margin-right: 0;
-    width: 80%;
-  }
-
-  /* .total-amount {
-    font-size: 24px;
-    margin-left: 0;
-    margin-bottom: 10px;
-  } */
-}
-
-
-
-
-/*  ---------------- Payment Details  ---------------- */
+/* Payment Details  */
 
 * {
   box-sizing: border-box;
