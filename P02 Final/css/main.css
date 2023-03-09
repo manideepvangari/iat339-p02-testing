@@ -455,6 +455,170 @@ hr{
  
 
 @media screen and (max-width: 768px) {
+
+  .cart-container{ 
+    width: 80%; 
+    height: 420px; 
+    background-color: #ffffff; 
+    border-radius: 20px; 
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5); 
+  } 
+   
+  .header{ 
+    margin: auto; 
+    width: 90%; 
+    height: 15%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  } 
+   
+  .heading{ 
+    font-size: 20px; 
+    font-family: Cambria; 
+    font-weight: 700; 
+    color: rgb(35, 75, 135); 
+  } 
+   
+  .cart-items{ 
+    margin: auto; 
+    width: 90%; 
+    height: 30%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  } 
+   
+  .hoodie{ 
+    margin-left: 10px; 
+    scale: 1.1; 
+    width: 80px; 
+    height: 120px; 
+    object-fit: contain; 
+  } 
+   
+  /* .about{ 
+    height: 100%; 
+    width: 24%; 
+  }  */
+   
+  .title{ 
+    padding-top: 10px; 
+    line-height: 10px; 
+    font-size: 20px; 
+    font-family: Cambria; 
+    font-weight: 800; 
+    color: rgb(35, 75, 135); 
+  } 
+   
+  .counter{ 
+    width: 15%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    /* margin-top: 5vw; */ 
+  } 
+   
+  .btn{ 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    background-color: #d9d9d9; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 12px; 
+    font-family: 'Open Sans'; 
+    font-weight: 900; 
+    color: #202020; 
+    cursor: pointer; 
+    font-family: Cambria; 
+    margin-top: 3px; 
+  } 
+   
+  .count{ 
+    font-size: 12px; 
+    font-family: Cambria; 
+    font-weight: 600; 
+    color: #202020; 
+    margin-top: 3px; 
+  } 
+   
+  .prices{ 
+    height: 100%; 
+    text-align: right; 
+  } 
+  .amount{ 
+    padding-top: 0px; 
+    font-size: 18px; 
+    font-family: Cambria; 
+    font-weight: 800; 
+    color: rgb(35, 75, 135); 
+    margin-top: 27px; 
+    margin-right: 20px;
+  } 
+   
+  hr{ 
+    width: 320px; 
+    float: right; 
+    margin-right: 42px; 
+  } 
+   
+  .checkout{ 
+    float: right; 
+    margin-right: 5%; 
+    width: 28%; 
+  } 
+   
+  .total-amount{ 
+    font-size: 30px; 
+    font-family: Cambria; 
+    font-weight: 900; 
+    color: rgb(35, 75, 135); 
+    margin-bottom: 20px; 
+    margin-left: 35px; 
+  } 
+   
+  .button_cart{ 
+    width: 90%; 
+    background: transparent; 
+    border: none; 
+    background: rgb(35, 75, 135); 
+    color: #fff; 
+    padding: 15px; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    transition: all 0.35s ease; 
+    font-family: Cambria; 
+  } 
+   
+  .cart_margins{ 
+    margin-top: 50px; 
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
