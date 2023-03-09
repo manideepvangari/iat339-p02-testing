@@ -458,78 +458,8 @@ hr{
 }
 
 
+/* ---------------- Payment Details ----------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
-  .about { 
-    width: 80%; 
-    margin-bottom: 20px; 
-  } 
- 
-  .counter { 
-    width: 40%; 
-    margin-top: 20px; 
-  } 
- 
-  .btn { 
-    width: 30px; 
-    height: 30px; 
-    font-size: 16px; 
-    margin-top: 0; 
-  } 
- 
-  .count { 
-    font-size: 16px; 
-    margin-top: 0; 
-  } 
- 
-  .prices { 
-    text-align: left; 
-    margin-top: 20px; 
-  } 
- 
-  hr { 
-    width: 90%; 
-    margin-right: 0; 
-  } 
- 
-  .checkout { 
-    margin-right: 0; 
-    width: 80%; 
-  } 
- 
-  /* .total-amount { 
-    font-size: 24px; 
-    margin-left: 0; 
-    margin-bottom: 10px; 
-  } */ 
-} 
-
-
-
-
-/*  ---------------- Payment Details  ---------------- */ 
- 
 * { 
   box-sizing: border-box; 
 } 
@@ -678,3 +608,27 @@ button:hover{
   cursor: pointer; 
   background: rgb(20, 45, 83); 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
