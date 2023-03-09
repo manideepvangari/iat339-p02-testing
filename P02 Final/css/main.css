@@ -1,281 +1,318 @@
-/* Typeface */ 
-h1,h2,h3{ 
-  font-family: monospace; 
+/* Typeface */
+h1,h2,h3{
+  font-family: monospace;
+}
+
+h2{
+  color: rgb(35, 75, 135);
+  font-size: 25px;
+}
+
+p{
+font-family: monospace;
+font-size: large;
+}
+
+/* Margins for text */
+.margins{
+  margin-left: 110px;
+}
+
+
+/* Navigation bar elements */
+.nav{
+margin-left: 20px;
+display: inline-block;
+color: black; 
+font-size: 1.25rem;
+
+padding: 0.25rem 0.5rem;
+text-decoration: none;
+
+transition: background-color 0.5s ease-out;
+font-family: monospace;
+}
+
+.nav:active, .nav:hover, .nav:focus {
+  color: rgb(35, 75, 135);
+  text-decoration: none;
+  /* text-decoration-color: rgb(35, 75, 135); */
+}
+
+.nav:hover::after{
+  content: '.';
+}
+
+/*------------------ Footer Styling ------------- */
+.footer{
+display: flex;
+box-sizing: border-box;
+flex-grow: 0;
+flex-shrink: 0;
+flex-direction: column;
+background-color: #555;
+color: #bccce6;
+text-align: center;
+height:auto;
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+
+/* Landing image  */
+
+#gym{
+  border-left: 120px solid #555;
+  border-right: 120px solid #555;
+  z-index: 0;
+  max-width:100%;
+  height: auto;
+}
+
+
+/* Placeholder squares for the 3 shop images */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 150px;
+}
+
+.square {
+  height: 200px;
+  width: 300px;
+  background-color: #bccce6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.square span {
+  color: black;
+  font-weight: bold;
+}
+
+.square:hover{
+  background-color: #8ba1c4;
+
+}
+
+.label_container{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+}
+
+/*--------------------------------Image Styling------------------------------*/
+.imageLink:hover, .imageLink:active{
+  filter: brightness(50%);
+  transition: 0.8s;
+}
+
+.imageShadow{
+filter: drop-shadow(30px 10px 4px black );
+}
+
+.imageCategory{
+width: 300px;
+height: 300px;
+}
+
+.imageMulti{
+width: 250px;
+height: 250px;
+}
+
+.imageCaptionCategory{
+font-family: monospace;
+text-align: center;
+width: 300px;
+font-size:xx-large;
+}
+
+.imageCaptionMulti{
+font-family: monospace;
+text-align: center;
+width: 250px;
+font-size:medium;
+}
+
+.eventPic{
+width: 450px;
+height: 450px;
+}
+
+.prodDetailImage{
+width: 400px;
+height: 400px;
+
+}
+
+.check{
+height: 50px;
+width: 50px;
+}
+/* Maybe add a label underneath each image? */
+
+/* .labels {
+  display: flex;
+  justify-content:center;
+  margin-top: 10px;
+  margin-right: 400px;
+  
+}
+
+.label {
+  color: black;
+  font-weight: normal;
+  text-9align: center;
+  margin-left: 350px;
+  
+} */
+
+/* ----------------------Flexbox code for items----------------------*/
+.sideBySideElements{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row;
+}
+
+.horizontalElement{
+margin-right: 40px;
+width: 300px;
+}
+
+.horizontalMultiElement{
+margin-bottom: 50px;
+width: 400px;
+flex-grow: 1;
+}
+
+.flexHeader{
+justify-content: left;
+margin-left: 20%;
+}
+
+.flexInheritText{
+  text-align: center;
+}
+
+@media (max-width: 1400px){
+  .flexHeader{
+    text-align: center;
+    margin-left: 0%;
+  }
 } 
+
+.aboutSection{
+  display: flex;
+  box-sizing: border-box;
+  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  padding-top: 1rem;
+
+}
+
+.multiItem{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+width: 85%;
+margin: auto;
+}
+
+.summaryPic{
+width: 300px;
+height: 300px;
+}
+
+
+/* --------------------- Order Confirm Page Styling ------------------ */
+
+.confirmItem{
+  margin: 2rem;
+}
+
+.confirmBG{
+  background-color: #8ba1c4;
+  width: 70%;
+  height: 70%;
+}
+
+.confirmText{
+  font-size: 30px;
+}
+
+/* --------------------- Item Page Styling ------------------ */
+.itemDetailsContainer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.itemTextDetails{
+display: flex;
+flex-direction: column;
+justify-content: left;
+flex-wrap: wrap;
+margin: 10rem;
+align-items: flex-start;
+}
  
-h2{ 
-  color: rgb(35, 75, 135); 
-  font-size: 25px; 
-} 
- 
-p{ 
-font-family: monospace; 
-font-size: large; 
-} 
- 
-/* Margins for text */ 
-.margins{ 
-  margin-left: 110px; 
-} 
- 
- 
-/* Navigation bar elements */ 
-.nav{ 
-margin-left: 20px; 
-display: inline-block; 
-color: black;  
-font-size: 1.25rem; 
- 
-padding: 0.25rem 0.5rem; 
-text-decoration: none; 
- 
-transition: background-color 0.5s ease-out; 
-font-family: monospace; 
-} 
- 
-.nav:active, .nav:hover, .nav:focus { 
-  color: rgb(35, 75, 135); 
-  text-decoration: none; 
-  /* text-decoration-color: rgb(35, 75, 135); */ 
-} 
- 
-.nav:hover::after{ 
-  content: '.'; 
-} 
- 
-/*------------------ Footer Styling ------------- */ 
-.footer{ 
-display: flex; 
-box-sizing: border-box; 
-flex-grow: 0; 
-flex-shrink: 0; 
-flex-direction: column; 
-background-color: #555; 
-color: #bccce6; 
-text-align: center; 
-height:auto; 
-padding-top: 2rem; 
-padding-bottom: 2rem; 
-} 
- 
- 
-/* Landing image  */ 
- 
-#gym{ 
-  margin-left: auto; 
-  margin-right: auto; 
-  border-top: none; 
-  border-bottom: none; 
-  border-left: 120px solid #555; 
-  border-right: 120px solid #555; 
-  z-index: 0; 
-} 
- 
- 
-/* Placeholder squares for the 3 shop images */ 
-.container { 
-  display: flex; 
-  justify-content: flex-start; 
-  margin-left: 150px; 
-} 
- 
-.square { 
-  height: 200px; 
-  width: 300px; 
-  background-color: #bccce6; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
-  margin-right: 50px; 
-  transition: background-color 0.3s ease-in-out; 
-} 
- 
-.square span { 
-  color: black; 
-  font-weight: bold; 
-} 
- 
-.square:hover{ 
-  background-color: #8ba1c4; 
- 
-} 
- 
-.label_container{ 
-  display: flex; 
-  flex-direction: column; 
-  align-items: baseline; 
- 
-} 
- 
-/*--------------------------------Image Styling------------------------------*/ 
-.imageLink:hover, .imageLink:active{ 
-  filter: brightness(50%); 
-  transition: 0.8s; 
-} 
- 
-.imageShadow{ 
-filter: drop-shadow(30px 10px 4px black ); 
-} 
- 
-.imageCategory{ 
-width: 300px; 
-height: 300px; 
-} 
- 
-.imageMulti{ 
-width: 250px; 
-height: 250px; 
-} 
- 
-.imageCaptionCategory{ 
-font-family: monospace; 
-text-align: center; 
-width: 300px; 
-font-size:xx-large; 
-} 
- 
-.imageCaptionMulti{ 
-font-family: monospace; 
-text-align: center; 
-width: 250px; 
-font-size:medium; 
-} 
- 
-.eventPic{ 
-width: 450px; 
-height: 450px; 
-} 
- 
-.prodDetailImage{ 
-width: 400px; 
-height: 400px; 
- 
-} 
- 
-.check{ 
-height: 50px; 
-width: 50px; 
-} 
-/* Maybe add a label underneath each image? */ 
- 
-/* .labels { 
-  display: flex; 
-  justify-content:center; 
-  margin-top: 10px; 
-  margin-right: 400px; 
-   
-} 
- 
-.label { 
-  color: black; 
-  font-weight: normal; 
-  text-9align: center; 
-  margin-left: 350px; 
-   
-} */ 
- 
-/* ----------------------Flexbox code for items----------------------*/ 
-.sideBySideElements{ 
-display: flex; 
-flex-wrap: wrap; 
-justify-content: center; 
-flex-direction: row; 
-} 
- 
-.horizontalElement{ 
-margin-right: 40px; 
-width: 300px; 
-} 
- 
-.horizontalMultiElement{ 
-margin-bottom: 50px; 
-width: 400px; 
-flex-grow: 1; 
-} 
- 
-.flexHeader{ 
-justify-content: left; 
-} 
- 
-.multiItem{ 
-display: flex; 
-flex-direction: row; 
-justify-content: center; 
-flex-wrap: wrap; 
-align-items: center; 
-align-content: center; 
-width: 85%; 
-margin: auto; 
-} 
- 
-.summaryPic{ 
-width: 300px; 
-height: 300px; 
-margin-left: 10rem; 
-} 
- 
- 
-/* --------------------- Item Page Styling ------------------ */ 
-.itemDetailsContainer{ 
-display: flex; 
-flex-direction: row; 
-justify-content: center; 
-flex-wrap: wrap; 
-align-items: center; 
-} 
- 
-.itemTextDetails{ 
-display: flex; 
-flex-direction: column; 
-justify-content: left; 
-flex-wrap: wrap; 
-margin: 10rem; 
-align-items: flex-start; 
-} 
- 
-.reviews{ 
-display: flex; 
-box-sizing: border-box; 
-flex-grow: 0; 
-flex-shrink: 0; 
-flex-direction: column; 
-text-align: center; 
-height:auto; 
-padding-bottom: 2rem; 
-} 
- 
-.summary{ 
-background-color: #8ba1c4; 
-width: 70%; 
-display: flex; 
-flex-direction:row; 
-align-items: center; 
-margin: auto; 
-} 
- 
-/* add to cart button */ 
-.button_cart{ 
-width: 90%; 
-background: transparent; 
-border: none; 
-background: rgb(35, 75, 135); 
-color: #fff; 
-padding: 15px; 
-border-radius: 4px; 
-font-size: 16px; 
-transition: all 0.35s ease; 
-font-family: Cambria; 
-} 
- 
-button:hover{ 
-cursor: pointer; 
-background: rgb(20, 45, 83); 
-} 
- 
- 
-/* ---------------- Cart Styling ------------------- */ 
- 
+.reviews{
+display: flex;
+box-sizing: border-box;
+flex-grow: 0;
+flex-shrink: 0;
+flex-direction: column;
+text-align: center;
+height:auto;
+padding-bottom: 2rem;
+}
+
+.summary{
+background-color: #8ba1c4;
+width: 70%;
+display: flex;
+flex-direction:row;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
+
+/* add to cart button */
+.button_cart{
+width: 90%;
+background: transparent;
+border: none;
+background: rgb(35, 75, 135);
+color: #fff;
+padding: 15px;
+border-radius: 4px;
+font-size: 16px;
+transition: all 0.35s ease;
+font-family: Cambria;
+}
+
+button:hover{
+cursor: pointer;
+background: rgb(20, 45, 83);
+}
+
+
+/* ---------------- Cart Styling ------------------- */
+
 .cart-container{ 
   width: 70%; 
   height: 500px; 
@@ -483,10 +520,10 @@ hr{
     margin-bottom: 10px; 
   } */ 
 } 
- 
- 
- 
- 
+
+
+
+
 /*  ---------------- Payment Details  ---------------- */ 
  
 * { 
