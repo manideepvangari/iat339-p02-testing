@@ -457,7 +457,7 @@ hr{
 @media screen and (max-width: 768px) {
 
   .cart-container{ 
-    width: 80%; 
+    width: 500px; 
     height: 420px; 
     background-color: #ffffff; 
     border-radius: 20px; 
@@ -618,7 +618,6 @@ hr{
 
 
 
-
 }
 
 
@@ -628,9 +627,9 @@ hr{
   box-sizing: border-box; 
 } 
  
-.column { 
+/* .column { 
   float: left; 
-  width: 33.33%; 
+  width: 0; 
   padding: 3px; 
 } 
  
@@ -643,16 +642,17 @@ hr{
 .description{ 
   margin-top: 10px; 
   max-width: 330px; 
-} 
+}  */
  
-.sub{ 
+/* .sub{ 
   margin-top: -10px; 
   max-width: 330px; 
-} 
+}  */
  
 .wrapper{ 
   background-color: #fff; 
-  width: 500px; 
+  width: 40%; 
+  min-width: 400px;
   padding: 25px; 
   box-shadow: 0px 0px 20px rgba(0,0,0,0.5); 
   border-radius: 20px; 
@@ -767,13 +767,27 @@ button{
   font-family: Cambria; 
 } 
  
- 
 button:hover{ 
   cursor: pointer; 
   background: rgb(20, 45, 83); 
 }
 
 
+@media screen and (max-width: 768px) {
+
+  .wrapper{ 
+    background-color: #fff; 
+    width: 40vw; 
+    min-width: 400px;
+    padding: 25px; 
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5); 
+    border-radius: 20px; 
+    font-family: Cambria; 
+
+  }
+
+    
+}
 
 
 
