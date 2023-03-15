@@ -1,4 +1,18 @@
-/* Typeface */
+/*
+P02 - Company 
+
+IAT 339 Spring 2023
+March 15, 2023
+
+Alexandro (Dro) Bertoia 
+Mani Vangari
+
+This CSS file contains all the classes and styling used across our website
+
+*/
+
+
+/*------------------ Header & Text Styling ------------- */
 h1,h2,h3{
   font-family: monospace;
 }
@@ -19,7 +33,7 @@ font-size: large;
 }
 
 
-/* Navigation bar elements */
+/*------------------ Main Navigation Bar Styling ------------- */
 .nav{
 margin-left: 20px;
 display: inline-block;
@@ -33,15 +47,17 @@ transition: background-color 0.5s ease-out;
 font-family: monospace;
 }
 
+/* Nav Bar Interaction */
 .nav:active, .nav:hover, .nav:focus {
   color: rgb(35, 75, 135);
   text-decoration: none;
-  /* text-decoration-color: rgb(35, 75, 135); */
+  font-size: xx-large;
 }
 
 .nav:hover::after{
   content: '.';
 }
+
 
 /*------------------ Footer Styling ------------- */
 .footer{
@@ -58,9 +74,19 @@ padding-top: 2rem;
 padding-bottom: 2rem;
 }
 
+/* Footer links */
+.footLink{
+  color: #fcfcfc;
+  text-decoration: none;
+  margin: 1rem;
+}
 
-/* Landing image  */
+.footLink:active, .footLink:hover, .footLink:focus{
+  text-decoration: underline;
+  font-size: x-large;
+}
 
+/*------------------ Splash Image  ------------- */
 #gym{
   border-left: 120px solid #555;
   border-right: 120px solid #555;
@@ -69,6 +95,7 @@ padding-bottom: 2rem;
   height: auto;
 }
 
+/* Re-Sizes when Screen is Small*/
 @media (max-width: 1400px){
   #gym{
     border-left: none;
@@ -123,6 +150,7 @@ padding-bottom: 2rem;
 filter: drop-shadow(30px 10px 4px black );
 }
 
+/* Specific Image Types */
 .imageCategory{
 width: 300px;
 height: 350px;
@@ -133,6 +161,17 @@ width: 250px;
 height: 290px;
 }
 
+.eventPic{
+width: 450px;
+height: 450px;
+}
+
+.prodDetailImage{
+width: 400px;
+height: 450px;
+
+}
+/* Captions for types of images */
 .imageCaptionCategory{
 font-family: monospace;
 text-align: center;
@@ -147,16 +186,9 @@ width: 250px;
 font-size:medium;
 }
 
-.eventPic{
-width: 450px;
-height: 450px;
-}
+/* ----------------------Flexbox code for items----------------------*/
 
-.prodDetailImage{
-width: 400px;
-height: 450px;
-
-}
+/* General Flex Tech for Items */
 
 .check{
 height: 50px;
@@ -199,6 +231,7 @@ width: 400px;
 flex-grow: 1;
 }
 
+/* Flexing for headers */
 .flexHeader{
 justify-content: left;
 margin-left: 20%;
@@ -215,6 +248,7 @@ margin-left: 20%;
   max-width: 30rem;
 }
 
+/* re-aligns headers when screen is small*/
 @media (max-width: 1400px){
   .flexHeader{
     text-align: center;
@@ -222,6 +256,7 @@ margin-left: 20%;
   }
 } 
 
+/*------------------ About Section Styling ------------- */
 .aboutSection{
   display: flex;
   box-sizing: border-box;
@@ -233,6 +268,7 @@ margin-left: 20%;
 
 }
 
+/*------------------ Multi-Item Listing Styling ------------- */
 .multiItem{
 display: flex;
 flex-direction: row;
@@ -251,7 +287,6 @@ height: 350px;
 
 
 /* --------------------- Order Confirm Page Styling ------------------ */
-
 .confirmItem{
   margin: 2rem;
 }
@@ -266,7 +301,8 @@ height: 350px;
   font-size: 30px;
 }
 
-/* --------------------- Item Page Styling ------------------ */
+/* --------------------- Detailed Item Page Styling ------------------ */
+/* Flex + Style for the text & items in item page*/
 .itemDetailsContainer{
 display: flex;
 flex-direction: row;
@@ -284,12 +320,14 @@ margin: 10rem;
 align-items: flex-start;
 }
 
+/* re-sizes when screen gets smaller */
 @media (max-width: 1100px) {
   .itemTextDetails{
     margin: 2rem;
   }
 }
- 
+
+/* Bottom of page review section */
 .reviews{
 display: flex;
 box-sizing: border-box;
@@ -301,6 +339,7 @@ height:auto;
 padding-bottom: 1rem;
 }
 
+/* ---------------- Order Confirmation Styling ------------------- */
 .summary{
 background-color: #8ba1c4;
 width: 70%;
@@ -311,28 +350,7 @@ justify-content: center;
 margin: auto;
 }
 
-/* add to cart button */
-.button_cart{
-width: 90%;
-background: transparent;
-border: none;
-background: rgb(35, 75, 135);
-color: #fff;
-padding: 15px;
-border-radius: 4px;
-font-size: 16px;
-transition: all 0.35s ease;
-font-family: Cambria;
-}
-
-button:hover{
-cursor: pointer;
-background: rgb(20, 45, 83);
-}
-
-
 /* ---------------- Cart Styling ------------------- */
-
 .cart-container{ 
   width: 70%; 
   height: 500px; 
@@ -368,7 +386,6 @@ background: rgb(20, 45, 83);
  
 .hoodie{ 
   margin-left: 10px; 
-  scale: 1.1; 
   width: calc(100% - 50.1vw); 
   min-width: 8vw; 
   height: 120px; 
@@ -394,7 +411,6 @@ background: rgb(20, 45, 83);
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  /* margin-top: 5vw; */ 
 } 
  
 .btn{ 
@@ -455,7 +471,8 @@ hr{
   margin-bottom: 1.5vw; 
   margin-left: calc(100% - 7.1vw); 
 } 
- 
+
+/* add to cart button */
 .button_cart{ 
   width: 100%; 
   background: transparent; 
@@ -474,6 +491,12 @@ hr{
 } 
  
 
+button:hover{
+cursor: pointer;
+background: rgb(20, 45, 83);
+}
+
+/* ---------------- Cart Styling when screen gets small ------------------- */
 @media screen and (max-width: 768px) {
 
   .cart-container{ 
@@ -511,16 +534,10 @@ hr{
    
   .hoodie{ 
     margin-left: 10px; 
-    scale: 1.1; 
     width: 80px; 
     height: 120px; 
     object-fit: contain; 
   } 
-   
-  /* .about{ 
-    height: 100%; 
-    width: 24%; 
-  }  */
    
   .title{ 
     padding-top: 10px; 
@@ -536,7 +553,6 @@ hr{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    /* margin-top: 5vw; */ 
   } 
    
   .btn{ 
@@ -615,59 +631,13 @@ hr{
   .cart_margins{ 
     margin-top: 50px; 
   } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
 /* ---------------- Payment Details ----------------- */
-
 * { 
   box-sizing: border-box; 
 } 
- 
-/* .column { 
-  float: left; 
-  width: 0; 
-  padding: 3px; 
-} 
- 
-.row::after { 
-  content: ""; 
-  clear: both; 
-  display: table; 
-} 
- 
-.description{ 
-  margin-top: 10px; 
-  max-width: 330px; 
-}  */
- 
-/* .sub{ 
-  margin-top: -10px; 
-  max-width: 330px; 
-}  */
  
 .wrapper{ 
   background-color: #fff; 
@@ -792,7 +762,7 @@ button:hover{
   background: rgb(20, 45, 83); 
 }
 
-
+/* ---------------- Payment Styling When Screen gets small ------------------- */
 @media screen and (max-width: 768px) {
 
   .wrapper{ 
