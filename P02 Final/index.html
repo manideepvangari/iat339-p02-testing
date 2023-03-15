@@ -1,5 +1,22 @@
+<!--
+P02 - Company 
+
+IAT 339 Spring 2023
+March 15, 2023
+
+Alexandro (Dro) Bertoia 
+Mani Vangari
+
+This page contains all the HTML for the home page of our website
+
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Header Mandatory Stuff-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +32,7 @@
 </head>
 
 <body>
+    <!-- Main Navigation Bar -->
     <nav class = "nav-main">
         <p><center>
           <a class = "nav" href="index.html">home</a>
@@ -24,16 +42,19 @@
         </p>
     </nav>
 
+    <!-- Big Splash Image -->
     <section id="home">
       <center>
         <img id="gym"  src="img/workout.png" alt="A man working out.">
       </center>
     </section>
 
+    <!-- Three Product Categories -->
     <section id="shop">
         <h2 class="flexHeader">Shop By Category</h2>
-      <section class="sideBySideElements">
 
+      <section class="sideBySideElements">
+          <!-- All images link to their respective multi-item views-->
           <div >
             <figure>
               <a href="hoodie.html"><img class="imageLink imageCategory" src="img/hoodie_cover.jpg" alt="A picture of a hoodie"></a>
@@ -57,19 +78,13 @@
 
 
       </section>
-      
-
-        <!-- maybe add a label underneath each image? -->
-
-        <!-- <div class="labels">
-          <span class="label">clothing</span>
-          <span class="label">clothing</span>
-          <span class="label">clothing</span>
-        </div> -->
     </section>
 
+    <!-- Non-clickable Events & Advertisement pages -->
     <h2 style="margin-top: 90px;" class="flexHeader">Upcoming Products and Events</h2>
     <section class="sideBySideElements">
+
+      <!-- Images used here created by Dro, not stolen -->
       <figure>
        <img src="img/ad1.png" class="eventPic" alt="Image of upcoming event"></a>
       </figure>
@@ -79,21 +94,25 @@
 
     </section>
 
-<section id="about" class="aboutSection">
 
-  <h2 class="reviews">About us</h2>
-  <p class="flexInheritText">Clear all the hurdles in the way of your fitness goals with Ascend. Our innovative FlexFit technology provides a tight fit while barely being noticable. We are dedicated to lowering the barrier to fitness and health
-    through our competetive prices and next-gen clothing tech. Are you ready to Ascend to the next level?
-                             
-  </p>
+    <!-- About Section -->
+    <section id="about" class="aboutSection">
+      <h2 class="reviews">About us</h2>
+      <p class="flexInheritText">Clear all the hurdles in the way of your fitness goals with Ascend. Our innovative FlexFit technology provides a tight fit while barely being noticable. We are dedicated to lowering the barrier to fitness and health
+        through our competetive prices and next-gen clothing tech. Are you ready to Ascend to the next level?
+                                  
+       </p>
 
-</section>
+    </section>
 
-
+    <!-- Footer at bottom of page-->
     <section class="footer">
       <p>
-        Copyright © Ascend 2023
+        <a class="footLink" href="../P01 Process/index.html">Ascend Style Guide</a>
+        <a class="footLink" href="Citations.html">Citations</a>
+        <a class="footLink" href="https://github.com/manideepvangari/iat339-p02-testing">Github Link</a>
       </p>
+      <p>Copyright © Ascend 2023</p>
     </section>
 
 
