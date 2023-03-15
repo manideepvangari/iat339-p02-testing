@@ -17,6 +17,10 @@ h1,h2,h3{
   font-family: monospace;
 }
 
+h1{
+  color: rgb(35, 75, 135);
+}
+
 h2{
   color: rgb(35, 75, 135);
   font-size: 25px;
@@ -775,8 +779,27 @@ button:hover{
     font-family: Cambria; 
 
   }
+}
 
-    
+/* ---------------- Citation Page ------------------- */
+.citationLink{
+  font-size: xx-large;
+  text-decoration: none;
+  color: #202020;
+  font-family: monospace;
+  margin: 2rem;
+
+}
+
+.citationLink:hover, .citationLink:active, .citationLink:focus{
+  color: #8ba1c4;
+  text-decoration: underline;
+}
+
+.linkStyle{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
 }
 
 
