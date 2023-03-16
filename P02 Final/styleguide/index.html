@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_main.css">
+    <title>P01 Progress Check 2</title>
+
+    <style>
+        body{
+            background-color: rgb(240, 242, 246);
+        }
+    </style>
+</head>
+<body> 
+        <nav class = "nav-main">
+            <p><center>
+            <a class = "nav" href="#about">about</a>
+            <a class = "nav" href="#products">products</a>
+            <a class="nav" href="#company_updates">news</a>
+            </center>
+        </p>
+     </nav>
+     <img id="gym" src="img/workout.png" alt="A man working out.">
+       
+   <section id="about" class="margins">
+    <h2>about.</h2>
+        <p>Ascend is a fitness clothing brand created for indivudals who would like to take their training to the peak. We are committed to create quality products sourced from sustainable and environmently friendly materials. All our products are ethically created in quality workplace environments. Our company is a thoughtful person who likes to remain stylish while supporting the environment through buying ethically sourced clothing. This person will help anybody in need, and appreciates feedback to improve themself in any way possible. Our company might be attractive to consumers due to its style, pricing, and the way products are created.
+        </p>
+        <p>
+            John is a 18 years old looking for clothes to workout in. He makes minimum wage as a waiter, and pays for most of his necessities such as food and rent. He is looking for affordable, comfortable, and stylish clothes to wear
+            wear while working out. He looks in the market and see that the prices of clothing for the typical fitness
+            brand (i.e. Gymshark, Lululemon) is way too expensive, and want an alternative that can satisfy his needs.
+        </p>
+        <p>This company is a fictional brand created for IAT339: Web Design and Development, Spring 2023, taught by Peter Loo and TA'd by Kimia Aghaei. A link to the course webpage can be found <a class ="link" href="https://www.sfu.ca/students/calendar/2023/spring/courses/iat/339.html" target="_blank">here</a>.
+        </p>
+    </section>
+
+     <section id="products" class="margins">
+        <h2>products.</h2>
+            <h4>Our clothing items include:
+            </h4>
+             <ol>
+				<li>
+					<p>Tanktops</p>
+				</li>
+				<li>
+					<p>Oversized Hoodies</p>
+				</li>
+			</ol>
+        
+
+        <!-- Side by side implemented from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_images_side_by_side -->
+        <div class="row">
+            <div class="column">
+                <img class = "products" src="img/tank.png" alt="A black tanktop"> 
+                <p class="description" style= "color: rgb(35, 75, 135);"> <b>Tanktop </b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; $20</p> 
+                <p class = "sub">Comfortable and lightweight.</p>
+            </div>
+
+            <div class="column">
+                <img class = "products" src="img/hoodie.png" alt="A black oversized hoodie">
+                <p class="description" style= "color: rgb(35, 75, 135);">  <b>Oversized Hoodie</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$30</p>
+                <p class="sub"> For the slightly conservative.</p>
+            </div>
+        
+        </div>
+    </section>
+    
+    <section id="shop" class="margins">
+        <h3><b>Payment Form</b></h3>
+    </section>
+
+
+    <!-- I used https://www.w3schools.com/howto/howto_css_checkout_form.asp for reference, as well as this video: https://www.youtube.com/watch?v=G7_VTWnWz40&ab_channel=Mr.WebDesigner -->
+
+    <!-- Required field used from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_required -->
+
+    <div class="wrapper margins" >
+        <form method="POST">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="radio" name="pay" id="bc1" class="radio">
+                    <label for="bc1">Credit Card</label>
+                    <input type="radio" name="pay" id="bc2" class="radio">
+                    <label for="bc2"> Debit Card</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="number" placeholder="Card Number" required class="name">
+                    
+                   
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="number" placeholder="Card CVC" required class="name">
+                    
+                </div>
+                <div class="input-box">
+                    <select>
+                        <option>01 jun</option>
+                        <option>02 jun</option>
+                        <option>03 jun</option>
+                    </select>
+                    <select>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit">Purchase</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class = "margins" >
+        <h3   id="checkout">Checkout</h3> 
+
+
+        <!-- I used this website for reference: https://designmodo.com/shopping-cart-ui/ -->
+        
+    <div class="cart-container font">
+        <div class="header">
+            <h3 class="heading">Shopping Cart</h3>
+           
+        </div>
+
+        <div class="cart-items">
+              <img src="img/tank.png" style= "height: 120px;" />
+              
+              <div class="about">
+                  <h1 class="title">Tanktop.</h1>
+              </div>
+              <div class="counter">
+                  <div class="btn">+</div>
+                  <div class="count">1</div>
+                  <div class="btn">-</div>
+              </div>
+              <div class="prices">
+                  <div class="amount">$20</div>
+              </div>
+        </div>
+
+        <div class="cart-items">
+                  <img src="img/hoodie.png" style = "height: 120px;" />
+              <div class="about">
+                  <h1 class="title">Hoodie.</h1>
+              </div>
+              <div class="counter">
+                  <div class="btn">+</div>
+                  <div class="count">2</div>
+                  <div class="btn">-</div>
+              </div>
+              <div class="prices">
+                  <div class="amount">$60</div>
+              </div>
+        </div>
+      <hr> 
+      <div class="checkout">
+      <div class="total">
+          <div class="total-amount">$80</div>
+      </div>
+      <button class="button_cart font">Checkout</button></div>
+    </div>
+ </div>
+
+    <section id="company_updates" class="margins">
+        <h2><b>news.</b></h2>
+        <p>New joggers coming next month, stay tuned.</p>
+
+        <h3><b>Fonts</b></h3>
+
+        <p style="font-family: Cambria"> This font is called <b>Cambria,</b> it looks elegant and minimalistic, which could be a good fit for the type of brand I'm looking to make.</p>
+        <p style="font-family: monospace" > This font is called <b>Monospace,</b> it takes looking minimalistic and simple to the extreme, which could also be a direction to take the brand in.</p>
+
+        <p>For the body text I'm using <b>Cambria</b>, and for navigation and paragraph headers I'm using <b style = "font-family: monospace;"> Monospace</b>.</p>
+
+        <h3><b>Color Palettes</b></h3>
+    
+        <!-- themes gathered from coolors.co  --------Old Color Implimenation-------
+        <img class = "themes" src="img/theme1.png" alt="Theme 1"> 
+        <img class = "themes" src="img/theme2.png" alt="Theme 2"> 
+        <img class = "themes" src="img/theme3.png" alt="Theme 3"> 
+            -->
+
+        <!-- Color Pallettes -->
+
+        <!-- Color Pallette 1 -->
+        <div class="swatches">
+            <div class="swatch">
+                <p>Indigo Dye - #2B4162</p>
+            </div>
+            <div class="swatch swatch2">
+                <p>Blue Sapphire - #385F71</p>
+            </div>
+            <div class="swatch swatch3">
+                <p>Magnolia - #F5F0F6</p>
+            </div>
+        </div>
+
+        <!-- Color Pallette 2 -->
+        <div class="swatches">
+            <div class="swatch swatch4">
+                <p>Gainsboro - #DCDCDD</p>
+            </div>
+            <div class="swatch swatch5">
+                <p>Silver - #C5C3C6</p>
+            </div>
+            <div class="swatch swatch6">
+                <p>Davys Grey - #46494C</p>
+            </div>
+        </div>
+        <!-- Color Pallette 3 -->
+        <div class="swatches">
+            <div class="swatch swatch7">
+                <p>Spanish Grey - # 969A97</p>
+            </div>
+            <div class="swatch swatch8">
+                <p>Timberwolf - #D6D1DC</p>
+            </div>
+            <div class="swatch swatch9">
+                <p>Mint Cream - #E5ECE9</p>
+            </div>
+        </div>
+
+        <p>I am currently using the first color palette, but I might make some changes in the future to incorporate more colors.</p>
+
+        <h3><b>Imagery</b></h3>
+        <p>There will definetly be imagery of the products (as seen above), logo, etc. I want to keep the art style minimalistic and stylish, but I'm not 100% sure what direction to take that in. One really nice example I found was <a class="link" href="https://www.etq-amsterdam.com" target="_blank" >this</a>. Their design is super elegant and simple, and is what I'm going for as well.</p>
+
+
+        <h2><b>citations.</b></h2>
+        <p>Main company image from <a class="link" href="https://www.pexels.com/photo/man-working-out-2294361/" target="_blank" >here</a>. </p>
+
+        <p>Tanktop image from <a class="link" href="https://shop.lululemon.com/p/mens-tanks/Fast-and-Free-Singlet-Elite/_/prod10370281?color=0001&sz=S&locale=en_CA&sl=CA&CID=Google_Shop-Smart_Men_Shop-Breakout_NB_CA_NAT_M_ag=CA_Shop-Smart_Men-Catch-All_DM&gclid=CjwKCAiAuOieBhAIEiwAgjCvcsAPyGf1uZCOJPndoVNh0CGmFDRqKY1qva1mfTa1AWA6v1a2Jcr7JxoCF0oQAvD_BwE&gclsrc=aw.ds" target="_blank" >here</a>.</p>
+
+        <p>Oversized hoodie image from <a class="link" href="https://www2.hm.com/en_asia5/productpage.1099512001.html" target="_blank" >here</a>.</p>
+
+        <p>Color themes gathered from <a class="link" href="https://coolors.co/" target="_blank" >here</a>.</p>
+
+        
+        
+
+
+
+        
+
+    </section> 
+
+
+
+</body>
+</html>
