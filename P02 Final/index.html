@@ -33,27 +33,24 @@ This page contains all the HTML for the home page of our website
 
 <body>
     <!-- Main Navigation Bar -->
-    <nav class = "nav-main">
-        <p><center>
-          <a class = "nav" href="index.html">home</a>
-          <a class = "nav" href="#shop">shop</a>
-          <a class="nav" href="#about">about</a>
-        </center>
-        </p>
+    <nav class = "center-nav"> 
+      <nav class = "nav-main">
+            <a class = "nav" href="index.html">home</a>
+            <a class = "nav" href="index.html#shop">shop</a>
+            <a class="nav" href="index.html#about">about</a>
+      </nav>
     </nav>
 
     <!-- Big Splash Image -->
-    <section id="home">
-      <center>
+    <div id="home" style="margin: 0 auto;">
         <img id="gym"  src="img/workout.png" alt="A man working out.">
-      </center>
-    </section>
+    </div>
 
     <!-- Three Product Categories -->
-    <section id="shop">
+    <div id="shop">
         <h2 class="flexHeader">Shop By Category</h2>
 
-      <section class="sideBySideElements">
+      <div class="sideBySideElements">
           <!-- All images link to their respective multi-item views-->
           <div >
             <figure>
@@ -77,43 +74,43 @@ This page contains all the HTML for the home page of our website
           </div>
 
 
-      </section>
-    </section>
+        </div>
+      </div>
 
     <!-- Non-clickable Events & Advertisement pages -->
     <h2 style="margin-top: 90px;" class="flexHeader">Upcoming Products and Events</h2>
-    <section class="sideBySideElements">
+    <div class="sideBySideElements">
 
       <!-- Images used here created by Dro, not stolen -->
       <figure>
-       <img src="img/ad1.png" class="eventPic" alt="Image of upcoming event"></a>
+       <img src="img/ad1.png" class="eventPic" alt="Image of upcoming event">
       </figure>
       <figure>
-        <img src="img/ad2.png" class="eventPic" alt="Image of upcoming event"></a>
+        <img src="img/ad2.png" class="eventPic" alt="Image of upcoming event">
       </figure>
 
-    </section>
+    </div>
 
 
     <!-- About Section -->
-    <section id="about" class="aboutSection">
+    <div id="about" class="aboutSection">
       <h2 class="reviews">About us</h2>
       <p class="flexInheritText">Clear all the hurdles in the way of your fitness goals with Ascend. Our innovative FlexFit technology provides a tight fit while barely being noticable. We are dedicated to lowering the barrier to fitness and health
         through our competetive prices and next-gen clothing tech. Are you ready to Ascend to the next level?
                                   
        </p>
 
-    </section>
+      </div>
 
     <!-- Footer at bottom of page-->
-    <section class="footer">
+    <div class="footer">
       <p>
-        <a class="footLink" href="../P01 Process/index.html">Ascend Style Guide</a>
+        <a class="footLink" href="styleguide/index.html">Ascend Style Guide</a>
         <a class="footLink" href="Citations.html">Citations</a>
         <a class="footLink" href="https://github.com/manideepvangari/iat339-p02-testing">Github Link</a>
       </p>
       <p>Copyright © Ascend 2023</p>
-    </section>
+    </div>
 
 
 
